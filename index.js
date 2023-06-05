@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
     res.send("Gursoy Api")
 })
 
+app.get("/mercedes", (req, res) => {
+    res.send("OK")
+})
+
 app.get("/:id", cors(), async (req, res) => {
     const gonderiID = req.params.id;
     const { Client } = require('@notionhq/client');
